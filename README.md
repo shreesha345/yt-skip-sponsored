@@ -1,4 +1,4 @@
-# SkipAds: A Project to Skip Sponsored Content in Videos  
+# SponsorSkip: A Project to Skip Sponsored Content in Videos  
 
 ## Problem Statement  
 
