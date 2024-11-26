@@ -1,0 +1,49 @@
+.yt-time-skip-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.skip-indicator {
+  height: 100%;
+  background: rgba(255, 0, 0, 0.8);
+  transition: width 0.1s linear;
+}
+
+.skip-message {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  display: none;
+}
+
+.yt-time-skip-overlay:hover .skip-message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skip-button {
+  background: #ff0000;
+  border: none;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.skip-button:hover {
+  background: #cc0000;
+}

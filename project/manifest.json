@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Time Skipper",
+  "version": "1.0",
+  "description": "Skip specific parts, sponsored content, and ads in YouTube videos automatically",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "http://127.0.0.1:8000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["*://*.youtube.com/*"],
+    "js": [
+      "src/utils.js",
+      "src/videoController.js",
+      "src/overlayManager.js",
+      "src/content.js"
+    ],
+    "css": ["styles/overlay.css"]
+  }],
+  "web_accessible_resources": [{
+    "resources": ["styles/*"],
+    "matches": ["*://*.youtube.com/*"]
+  }]
+}

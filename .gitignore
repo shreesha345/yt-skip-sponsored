@@ -1,0 +1,6 @@
+.env
+package
+__pycache__
+best_segments.json
+transcript.srt
+transcript.json

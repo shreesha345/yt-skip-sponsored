@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Time Skipper</title>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>YouTube Time Skipper</h2>
+    
+    <div class="timestamp-input">
+      <div class="input-group">
+        <input type="number" id="startMin" min="0" placeholder="Min" class="time-input">
+        <input type="number" id="startSec" min="0" max="59" placeholder="Sec" class="time-input">
+        <span class="separator">to</span>
+        <input type="number" id="endMin" min="0" placeholder="Min" class="time-input">
+        <input type="number" id="endSec" min="0" max="59" placeholder="Sec" class="time-input">
+      </div>
+      <button id="addSkip" class="add-button">Add Skip Range</button>
+    </div>
+
+    <div id="skipList" class="skip-list"></div>
+    
+    <div class="toggle-group">
+      <label class="switch">
+        <input type="checkbox" id="overlayToggle">
+        <span class="slider"></span>
+        <span class="label">Enable Auto-Skip</span>
+      </label>
+
+      <label class="switch">
+        <input type="checkbox" id="sponsorToggle">
+        <span class="slider"></span>
+        <span class="label">Skip Sponsored Content</span>
+      </label>
+
+      <label class="switch">
+        <input type="checkbox" id="adBlockToggle">
+        <span class="slider"></span>
+        <span class="label">Block YouTube Ads</span>
+      </label>
+    </div>
+    
+    <p id="status" class="status"></p>
+  </div>
+  <script src="src/popup.js"></script>
+</body>
+</html>
