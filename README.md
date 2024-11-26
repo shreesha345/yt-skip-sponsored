@@ -43,7 +43,7 @@ SkipAds is a lightweight tool built using Python and Node.js that automates the 
    ![image](https://github.com/user-attachments/assets/9b7b25b2-1b93-44f0-a4d0-bcd47e8ca4a5)
     after uploading the project folder just run python server.py to start the server.
 
-4. **Run SkipAds**:  
+4. **Run SponsorSkip**:  
    - Start the Python script:  
      ```bash  
      python server.py  
