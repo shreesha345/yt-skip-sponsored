@@ -1,7 +1,3 @@
-Here’s the updated **README.md** reflecting support for all Chromium-based browsers:  
-
----
-
 # SkipAds: A Project to Skip Sponsored Content in Videos  
 
 ## Problem Statement  
